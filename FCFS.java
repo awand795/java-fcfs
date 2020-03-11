@@ -13,7 +13,8 @@ public class FCFS {
         String proses,tmp,tmpname;
         String[] at = new String[100],bt = new String[100], namap = new String[100];
         int[] wtp = new int[100],time = new int[100];
-        int i,j,awt,totwtp = 0;
+        int i,j;
+        double awt,totwtp = 0;
         proses = JOptionPane.showInputDialog("Masukkan Berapa Proses");
         for(i=1;i<=Integer.parseInt(proses);i++){
             namap[i] = JOptionPane.showInputDialog("Nama Proses");
@@ -89,7 +90,7 @@ public class FCFS {
         System.out.println("=========================================================");
         System.out.println("\n\nAverage Waiting Time");
         System.out.println("=========================================================");
-        awt = totwtp/Integer.parseInt(proses);
+        awt = totwtp/Float.parseFloat(proses);
         System.out.println("Total Average Waiting Time = "+awt);
         System.out.println("=========================================================");
     }
